@@ -1,36 +1,17 @@
 {
-  "name": "mern-ecommerce",
+  "name": "leaf-and-eye",
   "version": "1.0.0",
-  "description": "MERN Ecommerce",
+  "description": "🍃 Leaf & Eye Specialty Plant Store",
   "main": "server/index.js",
   "scripts": {
-    "build": "npm run build:clean && cross-env NODE_ENV=production webpack --progress --colors",
+    "build": "yarn run build:clean && cross-env NODE_ENV=production webpack --progress --colors",
     "build:clean": "rimraf ./dist",
     "start": "cross-env NODE_ENV=development nodemon server",
     "start:production": "cross-env NODE_ENV=production node server",
-    "production": "npm run build",
-    "postinstall": "npm run build",
+    "production": "yarn run build",
+    "postinstall": "yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohamedsamara/mern-ecommerce.git"
-  },
-  "keywords": [
-    "node",
-    "express",
-    "mongoose",
-    "react",
-    "redux",
-    "redux-thunk",
-    "webpack"
-  ],
-  "author": "Mohamed Samara (https://github.com/mohamedsamara)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mohamedsamara/mern-ecommerce/issues"
-  },
-  "homepage": "https://github.com/mohamedsamara/mern-ecommerce#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "bcryptjs": "^2.4.3",
@@ -98,5 +79,24 @@
     "webpack-hot-middleware": "^2.25.0",
     "webpack-merge": "^4.2.1",
     "webpack-pwa-manifest": "^4.0.0"
-  }
+  },
+  "author": "Dany Dodson (https://github.com/danydodson)",
+  "homepage": "https://github.com/danydodson/leaf-and-eye#readme",
+  "bugs": {
+    "url": "https://github.com/danydodson/leaf-and-eye/issues"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongoose",
+    "react",
+    "redux",
+    "redux-thunk",
+    "webpack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danydodson/leaf-and-eye.git"
+  },
+  "license": "MIT"
 }
