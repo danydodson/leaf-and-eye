@@ -1,8 +1,11 @@
 {
   "name": "leaf-and-eye",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "🍃 Leaf & Eye Specialty Plant Store",
   "main": "server/index.js",
+  "engines": {
+    "yarn": "1.22.5"
+  },
   "scripts": {
     "build": "yarn run build:clean && cross-env NODE_ENV=production webpack --progress --colors",
     "build:clean": "rimraf ./dist",
@@ -10,6 +13,7 @@
     "start:production": "cross-env NODE_ENV=production node server",
     "production": "yarn run build",
     "postinstall": "yarn run build",
+    "heroku-postbuild": "ng build --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -86,6 +90,7 @@
     "url": "https://github.com/danydodson/leaf-and-eye/issues"
   },
   "keywords": [
+    "heroku",
     "node",
     "express",
     "mongoose",
